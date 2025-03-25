@@ -46,6 +46,7 @@ container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 5px;
     padding: 24px;
     font-family: "Montserrat", sans-serif;
   }
@@ -83,6 +84,7 @@ container {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 15px;
   }
   
   /* Ancien prix barré */
@@ -120,6 +122,12 @@ container {
     width: 18px;
     height: 18px;
   }
+
+  #prices {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
   
 /* RESPONSIVE - Adaptation sur petits écrans */
 @media (max-width: 600px) {
@@ -134,7 +142,7 @@ container {
     }
   
     #right {
-      width: 100%; 
+      width: fit-content; 
       padding: 20px;
     }
     
